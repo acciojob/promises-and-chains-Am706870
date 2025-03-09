@@ -5,7 +5,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
             let age = document.getElementById("age").value.trim();
 
             if (name === "" || age === "") {
-                alert("Please enter both name and age.");
+                alert("Please enter valid details.");
                 return
 			}
 			age = parseInt(age);
@@ -13,9 +13,9 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 let mypromise = new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 		if(age>=18){
-		resolve(`Welcome, ${name} "You can vote.`)
+		resolve("Welcome, . You can vote")
 		}else{
-			reject(`Oh sorry ${name} You aren't old enough.`)
+			reject("Oh sorry . You aren't old enough.")
 		}
 		},4000)
 			})
